@@ -21,6 +21,9 @@ class Toolbar extends React.Component {
 
     return (
       <div className="rbc-toolbar">
+
+				<span className="rbc-toolbar-label">{label}</span>
+
         <span className="rbc-btn-group">
           <button
             type="button"
@@ -42,7 +45,6 @@ class Toolbar extends React.Component {
           </button>
         </span>
 
-        <span className="rbc-toolbar-label">{label}</span>
 
         <span className="rbc-btn-group">{this.viewNamesGroup(messages)}</span>
       </div>
